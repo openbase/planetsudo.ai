@@ -3,10 +3,10 @@
  * and open the template in the editor.
  */
 
-package planetsudo.game.strategy;
+package de.dc.planetsudo.game.strategy;
 
-import planetsudo.level.levelobjects.Agent;
-import planetsudo.level.levelobjects.Resource;
+import de.dc.planetsudo.level.levelobjects.Agent;
+
 
 /**
  *
