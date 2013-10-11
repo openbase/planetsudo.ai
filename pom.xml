@@ -85,7 +85,6 @@
 		</plugins>
 	</build> 
 	<scm>
-
 		<developerConnection>scm:svn:svn+ssh://zionsvn/data/svn/PlanetSudo/trunk</developerConnection>
 		<url>http://aiweb.techfak.uni-bielefeld.de/user/mpohling</url>
 	</scm>
@@ -96,7 +95,7 @@
 		</license>
 	</licenses>
 	<organization>
-		<name>DC</name>
+		<name>DivineCorporation</name>
 		<url />
 	</organization>
 	<developers>
@@ -114,6 +113,7 @@
 	</developers>
 
 	<properties>
+		<netbeans.hint.license>gpl30</netbeans.hint.license>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 

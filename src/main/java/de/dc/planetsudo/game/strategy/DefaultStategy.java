@@ -5,7 +5,8 @@
 
 package de.dc.planetsudo.game.strategy;
 
-import de.dc.planetsudo.level.levelobjects.Agent;
+import de.dc.planetsudo.level.levelobjects.AgentInterface;
+import de.dc.planetsudo.level.levelobjects.Resource.ResourceType;
 
 
 /**
@@ -16,12 +17,12 @@ public class DefaultStategy extends AbstractStrategy {
 
 	public DefaultStategy() {
 	}
-	public DefaultStategy(Agent a) {
+	public DefaultStategy(AgentInterface a) {
 		super(a);
 	}
 
 	/**
-	 * Wie viele Agenten sollen erstellt werde wird hier angegeben.
+	 * Gib hier an wie viele Agenten dein Team besitzen soll.
 	 * @return Anzahl der Agenten
 	 */
 	@Override
