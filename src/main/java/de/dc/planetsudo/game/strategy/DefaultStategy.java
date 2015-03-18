@@ -18,12 +18,11 @@
 package de.dc.planetsudo.game.strategy;
 
 import de.dc.planetsudo.level.levelobjects.AgentInterface;
-import de.dc.planetsudo.level.levelobjects.Resource.ResourceType;
 
 
 /**
  *
- * @author Divine <DivineThreepwood@gmail.com>
+ * @author Divine Threepwood
  */
 public class DefaultStategy extends AbstractStrategy {
 
@@ -52,7 +51,7 @@ public class DefaultStategy extends AbstractStrategy {
 			}
 			@ Override
 			protected void action() {
-				
+				agent.go();
 			}
 		});
 	}
