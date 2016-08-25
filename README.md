@@ -27,7 +27,7 @@
 
 # Anlegen einer neuen KI
 ======================
-- Im PlanetSudoAI Projekt in der "Projects" Ansicht das Package de.dc.planetsudo.game.strategy öffnen und hier die Java Klasse "DefaultStategy.java" umbenennen (Refactor->Rename).
+- Im PlanetSudoAI Projekt in der "Projects" Ansicht das Package org.openbase.planetsudo.game.strategy öffnen und hier die Java Klasse "DefaultStategy.java" umbenennen (Refactor->Rename).
 - Die neue Stategieklasse kann nun nach belieben erweitert werden.
 
 

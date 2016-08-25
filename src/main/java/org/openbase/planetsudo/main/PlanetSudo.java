@@ -15,44 +15,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.dc.planetsudo.game.strategy;
-
-import de.dc.planetsudo.level.levelobjects.AgentInterface;
+package org.openbase.planetsudo.main;
 
 
 /**
  *
  * @author Divine Threepwood
  */
-public class DefaultStategy extends AbstractStrategy {
+public class PlanetSudo {
 
-	public DefaultStategy() {
-	}
-	public DefaultStategy(AgentInterface a) {
-		super(a);
-	}
-
-	/**
-	 * Gib hier an wie viele Agenten dein Team besitzen soll.
-	 * @return Anzahl der Agenten
+    /**
+	 * @param args the command line arguments
 	 */
-	@Override
-	protected int loadAgentCount() {
-		return 10;
-	}
-
-	@Override
-	protected void loadRules() {
-		//-------------------------------------------->
-		createRule(new Rule(0, "Just Go") {
-			@ Override
-			protected boolean constraint() {
-				return true;
-			}
-			@ Override
-			protected void action() {
-				agent.go();
-			}
-		});
+	public static void main(String[] args) {
+		Main.main(args);
 	}
 }
