@@ -4,7 +4,7 @@
 
 - Java/Netbeans Bundle installieren (Jeweils passende Version 32/64 Bit)
 - Im Netbeans Menü auf Projekt öffnen klicken (File->OpenProject) und den PlanetSudoAI Ordner als Projekt laden.
-- Anschließend die settings.xml in den .m2 Ordner im Benutzerverzeichniss kopieren. 
+- Anschließend die settings.xml (liegt im Projektordner) in den .m2 Ordner im Benutzerverzeichniss kopieren. 
     - Windows: settings.xml -> C:\Dokumente und Einstellungen/%USERNAME%/.m2/
     - Linux: settings.xml -> ~/.m2/
 - Jetzt kann PlanetSudo in Netbeans gestartet werden. (Hierzu auf den Playbutton drücken)

@@ -58,7 +58,7 @@ public class DefaultStategy extends AbstractStrategy {
      * so sind diese über die IDs 0 - 3 referenzierbar wobei Agent 0 immer für den Kommander steht.
      * Bitte beachte somit, dass die Agenten ID nicht größer als N - 1 sein kann sofern N für die maximale Anzahl von Agenten steht.
      *
-     * Die default Gruppen ALL & COMMANDER können anhand dieser Methode nicht modifiziert werden!
+     * Die default Gruppen ALL und COMMANDER können anhand dieser Methode nicht modifiziert werden!
      */
     @Override
     protected void loadSwatTeams() {
@@ -92,7 +92,12 @@ public class DefaultStategy extends AbstractStrategy {
 
             @Override
             protected void action() {
+                agent.go();
             }
         });
+        // Hier kann die nächste Regel eingefügt werden. 
+        // Hierzu markiere am besten die obere Regel von "//" bis "});" und drücke in Netbeans die Tastenkomination: (Strg + Shift + Down)
+        // Die Regel sollte somit kopiert und als nächste Regel eingefügt werden. Viel Spaß! 
+       
     }
 }
