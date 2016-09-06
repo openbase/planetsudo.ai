@@ -28,12 +28,12 @@ import org.openbase.planetsudo.level.levelobjects.AgentInterface;
  *
  * @author Divine Threepwood
  */
-public class DefaultStategy extends AbstractStrategy {
+public class DefaultStrategy extends AbstractStrategy {
 
-    public DefaultStategy() {
+    public DefaultStrategy() {
     }
 
-    public DefaultStategy(AgentInterface a) {
+    public DefaultStrategy(AgentInterface a) {
         super(a);
     }
 
