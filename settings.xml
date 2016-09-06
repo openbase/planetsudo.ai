@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<settings>
+    <profiles>
+        <profile>
+            <id>openbase</id>
+            <properties>
+                <downloadJavadocs>true</downloadJavadocs>
+                <downloadSources>true</downloadSources>
+                <!--android.sdk.path>/usr/local/android/sdk</android.sdk.path-->
+            </properties>
+        </profile>
+        <profile>
+            <id>sonatype</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>sonatype-oss-public</id>
+                    <url>https://oss.sonatype.org/content/groups/public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>daily</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>interval:60</updatePolicy>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <!--make the profile active -->
+        <activeProfile>openbase</activeProfile>
+    </activeProfiles>
+
+    <pluginGroups>
+        <pluginGroup>org.bitbucket.lp</pluginGroup>
+    </pluginGroups>
+</settings>
