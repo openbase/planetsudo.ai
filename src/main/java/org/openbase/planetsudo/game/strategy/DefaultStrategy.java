@@ -26,7 +26,7 @@ import org.openbase.planetsudo.level.levelobjects.AgentInterface;
 
 /**
  *
- * @author Divine Threepwood
+ * @author <a href="mailto:divine@openbase.org">Divine Threepwood</a
  */
 public class DefaultStrategy extends AbstractStrategy {
 
@@ -57,19 +57,21 @@ public class DefaultStrategy extends AbstractStrategy {
      * Die Agenten werden hierbei über ihre IDs hinzugefügt. Sind beispielsweise 4 Agenten in der Strategie angegeben,
      * so sind diese über die IDs 0 - 3 referenzierbar wobei Agent 0 immer für den Kommander steht.
      * Bitte beachte somit, dass die Agenten ID nicht größer als N - 1 sein kann sofern N für die maximale Anzahl von Agenten steht.
+     * Ein Agent darf durchaus in mehrere Swat Teams eingeteilt werden.
      *
-     * Die default Gruppen ALL und COMMANDER können anhand dieser Methode nicht modifiziert werden!
+     * ACHTUNG: Die default Gruppen ALL und COMMANDER können anhand dieser Methode nicht modifiziert werden!
      */
     @Override
     protected void loadSwatTeams() {
         // createSwat(ALPHA, 1, 6, 8);
+        // createSwat(DELTA, 2, 6, 7);
     }
 
     /**
      * Hier kannst du die Regeln für deine Agenten definieren.
      *
-     * Priorität
-     * =========
+     * Prioritäten festlegen
+     * =====================
      * Die Reihenfolge der Registrierung bestimmt hierbei die Priorität der Regeln.
      * So besitzt die erste Registrierte Regeln die geringste und die zuletzt registrierte Regel die höchste Priorität.
      *
@@ -95,9 +97,19 @@ public class DefaultStrategy extends AbstractStrategy {
                 agent.go();
             }
         });
-        // Hier kann die nächste Regel eingefügt werden. 
-        // Hierzu markiere am besten die obere Regel von "//" bis "});" und drücke in Netbeans die Tastenkomination: (Strg + Shift + Down)
-        // Die Regel sollte somit kopiert und als nächste Regel eingefügt werden. Viel Spaß! 
+        /**
+         * Eine neue Regel erstellen
+         * =========================
+         * Hierzu markiere am besten die obere Regel von "//" bis "});" und drücke in Netbeans die Tastenkombination: (Strg + Shift + Down)
+         * Die Regel sollte somit kopiert und als nächste Regel eingefügt werden. 
+         * 
+         * Nachträgliche Änderung von Prioritäten
+         * ======================================
+         * Während der Optimierung der Strategie, wird es immer mal wieder nötig sein die Prioritäten existiereder Regeln neu zu verteilen.
+         * Realisiert werden kann dies durch die Änderung der Regelreihenfolgen. Soll die Priorität einer Regel verändert werden, 
+         * so wird die zu verschiebene Regel markiert (von "//" bis "});") und in Netbeans über die Tastenkombination (Alt + Shift + (Up/Down)) verschoben.
+         * 
+         */
        
     }
 }
