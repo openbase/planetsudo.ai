@@ -6,7 +6,7 @@
     - Die Java Version sollte mindestens JDK 8 (Java SE Development Kit 8) betragen.
         - [Download Netbeans Bundle](http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html)
 - PlanetSudo AI Projekt herunterladen:
-    - entweder auf https://github.com/openbase/planetsudo.ai.git auf "Clone or Download" klicken und das Projekt als zip runterladen und entpacken. (Anfänger)
+    - entweder hier klicken [Download](https://github.com/openbase/planetsudo.ai/archive/master.zip) und das Projekt als zip runterladen und entpacken. (Anfänger)
         - Achtung bei dieser Methode geht die git Versionisierung verlohren.
     - oder einen Fork auf github erstellen https://github.com/openbase/planetsudo.ai.git und mit git local in einen Ordner clonen. (Für erfahrene Github Benutzer)
 - Im Netbeans Menü auf Projekt öffnen klicken (File->OpenProject) und den PlanetSudoAI Ordner als Projekt laden.
