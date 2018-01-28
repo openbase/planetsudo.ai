@@ -45,5 +45,4 @@
     - Oder Kontaktiert uns per mail: support@openbase.org
 
 
-======================================
-Copyright (C) 2009 - 2016 openbase.org
+Copyright (C) 2009 - 2018 openbase.org
