@@ -15,7 +15,7 @@
         - Alternative kann hierfür auch das "setup-mvn.bat" script ausgeführt werden welches den Kopiervorgang übernimmt.
     - Linux: settings.xml -> ~/.m2/
 - Jetzt kann PlanetSudo in Netbeans gestartet werden. (Hierzu auf den Playbutton drücken)
-- Um eine bessere Unterstützung bei der KI-Entwickelung zu erhalten, in der Project Ansicht einen rechten Mausklick auf "Dependencies" ausführen und anschließen auf "Download Javadoc" klicken.
+- Um eine bessere Unterstützung bei der KI-Entwickelung zu erhalten, in der "Projects" Ansicht einen rechten Mausklick auf "Dependencies" ausführen und anschließen auf "Download Javadoc" klicken.
 
 ## Anlegen einer neuen KI
 
