@@ -5,12 +5,14 @@
 ### Java installieren
 
 - Java JDK installieren wobei die Java Version mindestens JDK 8 (Java SE Development Kit 8) betragen sollte.
-        - [Download Netbeans Bundle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+    - [Download Netbeans Bundle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 ### Intellij installieren
+
 - IntelliJ Community Edition herunterladen und installieren sofern nicht schon vorhanden.
     - https://www.jetbrains.com/idea/download/
     
 ### Planet Sudo installieren
+
 - PlanetSudo AI Projekt herunterladen:
     - entweder hier klicken [Download](https://github.com/openbase/planetsudo.ai/archive/master.zip) und das Projekt als zip runterladen und entpacken. (Anfänger)
         - Achtung bei dieser Methode geht die git Versionisierung verlohren.
@@ -43,7 +45,7 @@
 
 ## Anlegen einer neuen KI
 
-- Im PlanetSudoAI Projektansicht zur Java Klasse "DefaultStategy.java" navigieren (src->main->java->org->openbase->planetsudo->game->strategy) Ordner der "Projects -> "Source Package" Ansicht das Package org.openbase.planetsudo.game.strategy öffnen und hier die Java Klasse "DefaultStategy.java" umbenennen (Refactor->Rename).
+- Im PlanetSudoAI Projektansicht zur Java Klasse "DefaultStategy.java" navigieren (src->main->java->org->openbase->planetsudo->game->strategy) und hier die "DefaultStategy.java" mit einem Rechtsklick auf die Klasse (Refactor->Rename) umbenennen.
 - Die neue Stategieklasse kann nun nach belieben erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation (JavaDoc) herausfinden.
     - z.B ihr schreibt "agent." und drückt dann (Strg + Leertaste).
