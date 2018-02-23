@@ -1,1 +1,1 @@
-cp settings.xml %HOMEPATH%\.m2\
+copy settings.xml %HOMEPATH%\.m2\

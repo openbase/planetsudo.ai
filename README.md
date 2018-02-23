@@ -1,25 +1,49 @@
 # Planet Sudo
 
+## Installation via IntelliJ IDE
+
+### Java installieren
+
+- Java JDK installieren wobei die Java Version mindestens JDK 8 (Java SE Development Kit 8) betragen sollte.
+        - [Download Netbeans Bundle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+### Intellij installieren
+- IntelliJ Community Edition herunterladen und installieren sofern nicht schon vorhanden.
+    - https://www.jetbrains.com/idea/download/
+    
+### Planet Sudo installieren
+- PlanetSudo AI Projekt herunterladen:
+    - entweder hier klicken [Download](https://github.com/openbase/planetsudo.ai/archive/master.zip) und das Projekt als zip runterladen und entpacken. (Anfänger)
+        - Achtung bei dieser Methode geht die git Versionisierung verlohren.
+    - oder einen Fork auf github erstellen https://github.com/openbase/planetsudo.ai.git und mit git local in einen Ordner clonen. (Für erfahrene Github Benutzer)
+    
+- In IntelliJ das Projekt öffnen (File->Open) und den PlanetSudoAI Ordner als Projekt laden.
+- Anschließend die settings.xml (liegt im Projektordner) in den .m2 Ordner im Benutzerverzeichniss kopieren. 
+    - Windows: settings.xml -> C:\Dokumente und Einstellungen/%USERNAME%/.m2/
+        - Alternative kann hierfür auch das "setup-mvn.bat" script ausgeführt werden welches den Kopiervorgang übernimmt.
+    - Linux: settings.xml -> ~/.m2/
+- Jetzt kann PlanetSudo gestartet werden. (Hierzu auf den Playbutton drücken)
+- Um eine bessere Unterstützung bei der KI-Entwickelung zu erhalten, in der "Project" Ansicht einen rechten Mausklick auf den  "ai" Wurzelordner ausführen und anschließen auf "Maven->Download Source and Documentation" klicken.
+
 ## Installation via Netbeans IDE
 
 - Java/Netbeans Bundle herunterladen und installieren.
     - Die Java Version sollte mindestens JDK 8 (Java SE Development Kit 8) betragen.
-    - http://www.oracle.com/technetwork/java/javase/downloads/index.html
+        - [Download Netbeans Bundle](http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html)
 - PlanetSudo AI Projekt herunterladen:
-    - entweder einen Fork auf github erstellen https://github.com/openbase/planetsudo.ai.git und mit git local in einen Ordner clonen.
-    - oder auf https://github.com/openbase/planetsudo.ai.git auf "Clone or Download" klicken und das Projekt als zip runterladen und entpacken.
+    - entweder hier klicken [Download](https://github.com/openbase/planetsudo.ai/archive/master.zip) und das Projekt als zip runterladen und entpacken. (Anfänger)
         - Achtung bei dieser Methode geht die git Versionisierung verlohren.
+    - oder einen Fork auf github erstellen https://github.com/openbase/planetsudo.ai.git und mit git local in einen Ordner clonen. (Für erfahrene Github Benutzer)
 - Im Netbeans Menü auf Projekt öffnen klicken (File->OpenProject) und den PlanetSudoAI Ordner als Projekt laden.
 - Anschließend die settings.xml (liegt im Projektordner) in den .m2 Ordner im Benutzerverzeichniss kopieren. 
     - Windows: settings.xml -> C:\Dokumente und Einstellungen/%USERNAME%/.m2/
         - Alternative kann hierfür auch das "setup-mvn.bat" script ausgeführt werden welches den Kopiervorgang übernimmt.
     - Linux: settings.xml -> ~/.m2/
 - Jetzt kann PlanetSudo in Netbeans gestartet werden. (Hierzu auf den Playbutton drücken)
-- Um eine bessere Unterstützung bei der KI-Entwickelung zu erhalten, in der Project Ansicht einen rechten Mausklick auf "Dependencies" ausführen und anschließen auf "Download Javadoc" klicken.
+- Um eine bessere Unterstützung bei der KI-Entwickelung zu erhalten, in der "Projects" Ansicht einen rechten Mausklick auf "Dependencies" ausführen und anschließen auf "Download Javadoc" klicken.
 
 ## Anlegen einer neuen KI
 
-- Im PlanetSudoAI Projekt in der "Projects" Ansicht das Package org.openbase.planetsudo.game.strategy öffnen und hier die Java Klasse "DefaultStategy.java" umbenennen (Refactor->Rename).
+- Im PlanetSudoAI Projektansicht zur Java Klasse "DefaultStategy.java" navigieren (src->main->java->org->openbase->planetsudo->game->strategy) Ordner der "Projects -> "Source Package" Ansicht das Package org.openbase.planetsudo.game.strategy öffnen und hier die Java Klasse "DefaultStategy.java" umbenennen (Refactor->Rename).
 - Die neue Stategieklasse kann nun nach belieben erweitert werden.
 - Informationen über mögliche Funktionalitäten könnt ihr über die Methoden Dokumentation (JavaDoc) herausfinden.
     - z.B ihr schreibt "agent." und drückt dann (Strg + Leertaste).
@@ -45,5 +69,4 @@
     - Oder Kontaktiert uns per mail: support@openbase.org
 
 
-======================================
-Copyright (C) 2009 - 2016 openbase.org
+Copyright (C) 2009 - 2018 openbase.org
